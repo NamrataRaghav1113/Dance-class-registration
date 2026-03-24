@@ -8,6 +8,7 @@ def getvals():
     print(f"Age: {agevalue.get()}")
     print(f"Dance Style: {stylevalue.get()}")
     print(f"Gender: {gendervalue.get()}")
+    
 
 root = Tk()
 root.geometry("650x570")
@@ -22,6 +23,7 @@ Label(root, text="Dance Style").grid(row=3, column=0)
 Label(root, text="Gender").grid(row=4, column=0)
 
                         # Tkinter Variable Classes
+
 namevalue = StringVar()
 agevalue = StringVar()
 stylevalue = StringVar()
@@ -36,6 +38,7 @@ Entry(root, textvariable=stylevalue).grid(row=3, column=1)
 Radiobutton(root, text="Male", variable=gendervalue, value="Male").grid(row=4, column=1)
 Radiobutton(root, text="Female", variable=gendervalue, value="Female").grid(row=5, column=1)
 Radiobutton(root, text="Other", variable=gendervalue, value="Other").grid(row=6, column=1)
+
 
 # Submit Button
 Button(root, text="Submit", command=getvals).grid(row=7, column=1)
