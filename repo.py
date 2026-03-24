@@ -4,6 +4,7 @@
 from tkinter import *
 
 def getvals():
+    
     print(f"Name: {namevalue.get()}")
     print(f"Age: {agevalue.get()}")
     print(f"Dance Style: {stylevalue.get()}")
